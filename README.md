@@ -34,20 +34,20 @@ create database wordcloudapp ;
 
 ## Running app
 ```bash
-dev_appserver.py .
+dev_appserver.py
 ```
 
-# To access the application .. type on your browser
+## To access the application .. type on your browser
 ```bash
 localhost:8080
 ```
 
-# To access the admin server .. type on your browser
+## To access the admin server .. type on your browser
 ```bash
 http://localhost:8000
 ```
 
-# To deploy & browse app on appengine :
+## To deploy & browse app on appengine :
 ```bash
 gcloud app deploy
 gcloud app browse
