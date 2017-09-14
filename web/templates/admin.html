@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div>
+    <h4 class="pull-right">Total words: {{paginator.count()}}</h4>
+</div>
+<table class="table table-hover table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Primary Key</th>
+            <th>Word</th>
+            <th>Count</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for wordcount in wordcounts %}
+            <tr>
+              <td>{{ wordcount.id }}</td>
+              <td>{{ wordcount.decrypted_word() }}</td>
+              <td>{{ wordcount.count }}</td>
+              <td>{{ wordcount.created }}</td>
+            </tr>
+        {% end %}
+    </tbody>
+</table>
+{% if paginator.has_pages %}
+    <div class="clearfix">
+        <nav aria-label="Page navigation">
+          <ul class="pagination text-center">
+            {% if paginator.prev_page %}
+            <li>
+              <a href="?page={{ paginator.prev_page }}" aria-label="Previous">
+                <span aria-hidden="true">&laquo; Previous</span>
+              </a>
+            </li>
+            {% end %}
+            {% for page in paginator.pages() %}
+              {% if paginator.is_current(page) %}
+                <li class="active"><a href="#">{{ page }} <span class="sr-only">(current)</span></a></li>
+              {% else %}
+                <li><a href="?page={{ page }}">{{ page }}</a></li>
+              {% end %}
+            {% end %}
+            {% if paginator.next_page %}
+            <li>
+              <a href="?page={{ paginator.next_page }}" aria-label="Next">
+                <span aria-hidden="true">&raquo; Next</span>
+              </a>
+            </li>
+            {% end %}
+          </ul>
+        </nav>
+    </div>
+  {% end %}
+{% end %}

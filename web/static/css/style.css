@@ -1,0 +1,112 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+  min-height: 80vh;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+.m-t-20 {
+  margin-top: 20px !important;
+}
+.summary-table>tbody>tr>td {
+}
+
+#word-cloud {
+
+}
+#word-cloud .loader {
+  margin: 20px auto;
+}
+
+.cloud {
+    padding: 5px;
+    display: inline-block;
+    color: #337ab7;
+}
+
+/* adjust sizes of the words in the clouds accordingly */
+.word-0 {
+    font-size: 14px;
+}
+
+.word-1 {
+    font-size: 18px;
+}
+
+.word-2 {
+  font-size: 22px;
+}
+
+.word-3 {
+    font-size: 26px;
+}
+
+.word-4 {
+    font-size: 30px;
+}
+
+.word-5 {
+    font-size: 35px;
+}
+
+.word-6 {
+    font-size: 40px;
+}
+
+.word-7 {
+    font-size: 45px;
+}
+
+.word-8 {
+    font-size: 55px;
+}
+
+.word-9 {
+    font-size: 60px;
+}
+
+.word-10 {
+    font-size: 70px;
+}
+
+.pagination {
+    display: block;
+}

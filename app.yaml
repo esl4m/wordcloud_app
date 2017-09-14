@@ -1,0 +1,25 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+# [START handlers]
+handlers:
+- url: /static
+  static_dir: web/static
+  application_readable: true
+- url: /.*
+  script: main.app
+
+env_variables:
+  MYSQL_DB_USER: root
+  CLOUDSQL_CONNECTION_NAME: wordcloud-2017:us-central1:wordcloudapp
+  PK_SALT: b758fbf75a2d489aa248f270da956bae
+
+
+libraries:
+- name: ssl
+  version: latest
+- name: MySQLdb
+  version: "latest"
+- name: pycrypto
+  version: "2.6"
