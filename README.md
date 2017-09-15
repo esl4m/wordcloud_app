@@ -52,3 +52,5 @@ http://localhost:8000
 gcloud app deploy
 gcloud app browse
 ```
+
+Inspired by [word_cloud](https://github.com/epigos/wordcloud)
