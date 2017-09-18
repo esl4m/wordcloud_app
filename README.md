@@ -4,7 +4,7 @@ Python app engine web based application. This application is for analyzing custo
 and counts the frequency of use of each word on that page.
 Application uses : tornado, torndb
 
-[Demo](https://wordcloud-2017.appspot.com/)
+[Application on Google Cloud](https://wordcloud-2017.appspot.com/)
 
 ## Installation
 
