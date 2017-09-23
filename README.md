@@ -1,5 +1,8 @@
 # App Engine Word Cloud
 
+-- Code challenge for a company --
+-- Not under development --
+
 Python app engine web based application. This application is for analyzing custom url like (https://en.wikipedia.org/wiki/Main_Page)
 and counts the frequency of use of each word on that page.
 Application uses : tornado, torndb
@@ -53,4 +56,4 @@ gcloud app deploy
 gcloud app browse
 ```
 
-Inspired by [word_cloud](https://github.com/epigos/wordcloud)
+Inspired by : sorry repo removed !
